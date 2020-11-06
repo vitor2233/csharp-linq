@@ -15,7 +15,9 @@ namespace CsharpHome2
             //people = people.OrderByDescending(x => x.FirstName).ToList();
             //people = people.OrderByDescending(x => x.FirstName).ThenByDescending(x => x.YearsExperience).ToList();
 
-            
+            //Where
+            //people = people.Where(x => x.YearsExperience < 5).ToList();
+            //people = people.Where(x => x.YearsExperience < 5 && x.Birthday.Month == 3).ToList();
 
             foreach (var person in people)
             {
