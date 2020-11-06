@@ -10,6 +10,7 @@ namespace CsharpHome2
             List<Person> output = new List<Person>();
 
             output.Add(new Person { FirstName = "Vítor", LastName = "Guilherme", Birthday = Convert.ToDateTime("22/3/2001"), YearsExperience = 1 });
+            output.Add(new Person { FirstName = "Vítor", LastName = "Pedrosa", Birthday = Convert.ToDateTime("22/3/2001"), YearsExperience = 2 });
             output.Add(new Person { FirstName = "Pedro", LastName = "Henrique", Birthday = Convert.ToDateTime("21/11/2000"), YearsExperience = 1 });
             output.Add(new Person { FirstName = "André", LastName = "Gustavo", Birthday = Convert.ToDateTime("12/12/1980"), YearsExperience = 27 });
             output.Add(new Person { FirstName = "Alisson", LastName = "Pedrosa", Birthday = Convert.ToDateTime("17/2/1999"), YearsExperience = 4 });
