@@ -19,6 +19,14 @@ namespace CsharpHome2
             //people = people.Where(x => x.YearsExperience < 5).ToList();
             //people = people.Where(x => x.YearsExperience < 5 && x.Birthday.Month == 3).ToList();
 
+            //Sum
+            //int yearsTotal = people.Sum(x => x.YearsExperience);
+            int yearsTotal = 0;
+            //Pegue as pessoas com mês igual a 3, depois some YearsExperience
+            yearsTotal = people.Where(x => x.Birthday.Month == 3).Sum(x => x.YearsExperience);
+
+            Console.WriteLine($"Soma total dos anos de experiência: { yearsTotal }");
+
             foreach (var person in people)
             {
                 Console.WriteLine($"{ person.FirstName } { person.LastName } ({ person.Birthday.ToShortDateString() }): Experience { person.YearsExperience }");
