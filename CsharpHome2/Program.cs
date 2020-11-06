@@ -21,11 +21,15 @@ namespace CsharpHome2
 
             //Sum
             //int yearsTotal = people.Sum(x => x.YearsExperience);
-            int yearsTotal = 0;
+            //int yearsTotal = 0;
             //Pegue as pessoas com mês igual a 3, depois some YearsExperience
-            yearsTotal = people.Where(x => x.Birthday.Month == 3).Sum(x => x.YearsExperience);
+            //yearsTotal = people.Where(x => x.Birthday.Month == 3).Sum(x => x.YearsExperience);
 
-            Console.WriteLine($"Soma total dos anos de experiência: { yearsTotal }");
+            //Testes
+            //people = people.OrderBy(x => x.Birthday.Year)
+            //    .ThenBy(x => x.Birthday.Month).ThenBy(x => x.Birthday.Day).ToList();
+
+            people = people.Where(x => x.FirstName.StartsWith("A")).OrderBy(x => x.FirstName).ToList();
 
             foreach (var person in people)
             {
